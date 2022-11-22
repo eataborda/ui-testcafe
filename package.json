@@ -1,0 +1,32 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome",
+    "test:firefox": "testcafe firefox",
+    "test:edge": "testcafe edge",
+    "test:speed:10": "testcafe chrome --speed 0.1",
+    "test:emulation:iphonex": "testcafe chrome:emulation:device=iphonex",
+    "test:headless" :"testcafe chrome:headless",
+    "test:parallel": "testcafe chrome -c 3",
+    "test:headless:3":"testcafe chrome:headless -c 3",
+    "test:cf":"testcafe chrome,firefox",
+    "test:screenshots": "testcafe chrome -s path=output/screenshots,takeOnFails=true",
+    "test:videos": "testcafe chrome --video output/videos --video-options failedOnly=true",
+    "test:regression": "testcafe chrome --fixture-meta test=regression",
+    "test:endToEnd": "testcafe chrome --fixture-meta test=endToEnd",
+    "test:api": "testcafe chrome --fixture-meta test=api",
+    "test:loginNegative": "testcafe chrome --test-meta test=login-negative"    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "dotenv": "^16.0.3",
+    "testcafe": "^2.0.1",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}

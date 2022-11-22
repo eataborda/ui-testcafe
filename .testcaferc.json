@@ -1,0 +1,7 @@
+{
+    "src": "./tests/*.js",
+    "reporter":{
+        "name": "html",
+        "output": "output/report/execution-report.html"
+    }
+}
