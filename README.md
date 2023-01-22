@@ -6,11 +6,14 @@ Contains:
 
 ## Prerequisites
 - Verify that you have `Git` installed
-- Verify that you have `Node` installed, you can verify by running the following command:
+```shellscript
+$ git --version
+```
+- Verify that you have `Node.js` installed
 ```shellscript
 $ node --version
 ```
-If you do not return, for example, a value similar or superior to `v18.12.1` or if your terminal does not recognize the command, we recommend installing Node as detailed in the official TestCafe [guide](https://testcafe.io/documentation/402834/guides/basic-guides/install-testcafe)
+For Node.js if you do not return, for example, a value similar or superior to `v18.12.1` or if your terminal does not recognize the command, we recommend installing Node as detailed in the official TestCafe [guide](https://testcafe.io/documentation/402834/guides/basic-guides/install-testcafe)
 
 Node.js installers include the npm command line utility, verify that everything was installed correctly executing the following commands in the console
 ```shellscript
