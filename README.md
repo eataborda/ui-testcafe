@@ -2,7 +2,7 @@
 Example automation with the basic test configuration, contains examples of the different utilities offered by the automation framework
 
 Contains:
-- Automation made in JavaScript with basic examples of Testcafe features (API tests, UI with different configurations)
+- Automation made in JavaScript with basic examples of Testcafe features (API tests, UI tests with different configurations)
 
 ## Prerequisites
 - Verify that you have `Git` installed on your machine
