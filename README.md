@@ -36,7 +36,7 @@ $ npm install
 This creates the node_modules folder with everything needed to be able to run the automated tests
 
 ## Run tests
-You can run different types of tests depending on what you need to perform:
+Verify that you are in the root of the repository (testcafe folder), after that, run different types of tests depending on what you need to perform:
 
 You can run simple tests where you can choose the preferred browser(s) or even emulate devices
 ```shellscript
