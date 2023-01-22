@@ -5,14 +5,14 @@ Contains:
 - Automation made in JavaScript with basic examples of Testcafe features (API tests, UI tests with different configurations)
 
 ## Prerequisites
-- Verify that you have `Git` installed on your machine
-- Verify that you have `Node` installed on your computer, you can verify by running the following command:
+- Verify that you have `Git` installed
+- Verify that you have `Node` installed, you can verify by running the following command:
 ```shellscript
 $ node --version
 ```
 If you do not return, for example, a value similar or superior to `v18.12.1` or if your terminal does not recognize the command, we recommend installing Node as detailed in the official TestCafe [guide](https://testcafe.io/documentation/402834/guides/basic-guides/install-testcafe)
 
-Node.js installers include the npm command line utility, verify when installing Node.js that when executing the following commands the console recognizes them and returns the corresponding versions
+Node.js installers include the npm command line utility, verify that everything was installed correctly executing the following commands in the console
 ```shellscript
 $ node --version
 ```
