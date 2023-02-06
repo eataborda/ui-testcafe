@@ -9,4 +9,5 @@ test("GET request", async t =>{
     //console.log(results)
     await t.expect(results.body.title).eql("delectus aut autem")
     await t.expect(results.status).eql(200)
+    
 });
