@@ -1,0 +1,24 @@
+name: testcafe-ui-test-run
+on:
+  push:
+    paths:
+      - 'src/pages/**'
+      - 'tests'
+  schedule:
+    - cron: '0 10 * * 1,4'
+jobs:
+  test-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run tests
+        uses: DevExpress/testcafe-action@latest
+        with:
+          args: "testcafe chrome:headless"
+        run: npm run test:headless
+      - name: testcafe ui test result
+        uses: actions/upload-artifact@v2
+        with:
+          name: testcafe-ui-test-result
+          path: output/report
+          retention-days: 3
