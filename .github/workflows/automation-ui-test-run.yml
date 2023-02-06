@@ -15,7 +15,6 @@ jobs:
         uses: DevExpress/testcafe-action@latest
         with:
           args: "testcafe chrome:headless"
-        run: npm run test:headless
       - name: testcafe ui test result
         uses: actions/upload-artifact@v2
         with:
