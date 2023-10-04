@@ -8,7 +8,7 @@ on:
     - cron: '0 10 * * 1,4'
 jobs:
   test-run:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
@@ -17,7 +17,7 @@ jobs:
       - name: Run tests
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome tests"
+          args: "testcafe chrome:headless tests"
       - name: testcafe ui test result
         uses: actions/upload-artifact@v2
         with:
