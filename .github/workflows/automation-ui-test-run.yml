@@ -19,7 +19,7 @@ jobs:
       - name: Run tests
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "testcafe chrome:headless tests"
+          args: "chrome:headless tests"
       - name: testcafe ui test result
         uses: actions/upload-artifact@v2
         with:
