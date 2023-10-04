@@ -1,3 +1,5 @@
+[![automation-ui-test-run](https://github.com/eataborda/ui-testcafe/actions/workflows/automation-ui-test-run.yml/badge.svg)](https://github.com/eataborda/ui-testcafe/actions/workflows/automation-ui-test-run.yml)
+
 # Testcafe
 Example automation with the basic test configuration, contains examples of the different utilities offered by the automation framework
 
@@ -26,8 +28,8 @@ $ npm --version
 ## Use sample project locally
 - Clone the repository and move inside that path:
 ```shellscript
-$ git clone git@github.com:eataborda/testcafe.git
-$ cd ./testcafe
+$ git clone git@github.com:eataborda/ui-testcafe.git
+$ cd ./ui-testcafe
 ```
 - Install the project dependencies using npm:
 ```shellscript
