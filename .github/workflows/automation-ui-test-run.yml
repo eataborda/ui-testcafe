@@ -15,11 +15,10 @@ jobs:
         with:
           node-version: '18.12.1'
       - uses: browser-actions/setup-chrome@v1
-      - run: chrome --version
       - name: Run tests
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome:headless"
+          args: "chrome"
       - name: testcafe ui test result
         uses: actions/upload-artifact@v2
         with:
