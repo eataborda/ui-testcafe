@@ -14,7 +14,7 @@ jobs:
       - name: Run tests
         uses: Meemaw/testcafe-action@master
         with:
-          args: "chrome:headless"
+          args: "chrome:headless ./tests"
       - name: testcafe ui test result
         uses: actions/upload-artifact@v2
         with:
