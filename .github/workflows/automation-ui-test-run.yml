@@ -18,5 +18,6 @@ jobs:
           node-version: '18.12.1'
       - uses: actions/checkout@v3
       - run: npm install
+      - run: npm audit fix --force
       - name: Run TestCafe tests
         run: npm run test:headless
