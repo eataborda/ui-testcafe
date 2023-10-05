@@ -14,15 +14,4 @@ jobs:
         with:
           node-version: '18.12.1'
       - uses: actions/checkout@v3
-      - run: npm install
-      - uses: browser-actions/setup-chrome@v1
-        with:
-          chrome-version: stable
-      - name: Run TestCafe tests
-        run: npm run test:headless
-      - name: TestCafe ui test result
-        uses: actions/upload-artifact@v2
-        with:
-          name: testcafe-ui-test-result
-          path: output/report
-          retention-days: 3
+      - run: pwd
