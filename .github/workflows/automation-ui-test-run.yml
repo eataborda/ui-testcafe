@@ -14,10 +14,9 @@ jobs:
         with:
           node-version: '18.12.1'
       - uses: actions/checkout@v3
+      - run: npm install
       - name: Run TestCafe tests
-        uses: DevExpress/testcafe-action@latest
-        with:
-          args: "chrome tests"
+        run: npm run testcafe chrome:headless
       - name: TestCafe ui test result
         uses: actions/upload-artifact@v2
         with:
