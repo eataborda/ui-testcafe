@@ -1,5 +1,3 @@
-[![automation-ui-test-run](https://github.com/eataborda/ui-testcafe/actions/workflows/automation-ui-test-run.yml/badge.svg)](https://github.com/eataborda/ui-testcafe/actions/workflows/automation-ui-test-run.yml)
-
 # Testcafe
 Example automation with the basic test configuration, contains examples of the different utilities offered by the automation framework
 
