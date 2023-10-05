@@ -10,16 +10,15 @@ jobs:
   test-run:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
         with:
           node-version: '18.12.1'
-      - uses: browser-actions/setup-chrome@v1
-      - name: Run tests
+      - uses: actions/checkout@v3
+      - name: Run TestCafe tests
         uses: DevExpress/testcafe-action@latest
         with:
-          args: "chrome"
-      - name: testcafe ui test result
+          args: "chrome tests"
+      - name: TestCafe ui test result
         uses: actions/upload-artifact@v2
         with:
           name: testcafe-ui-test-result
