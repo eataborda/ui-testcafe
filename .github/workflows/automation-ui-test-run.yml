@@ -21,9 +21,3 @@ jobs:
       - run: npm audit fix --force
       - name: Run TestCafe tests
       - run: npm run test:headless
-      - name: TestCafe ui test result
-      - uses: actions/upload-artifact@v2
-        with:
-          name: testcafe-ui-test-result
-          path: output/report
-          retention-days: 3
