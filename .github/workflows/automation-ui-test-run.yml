@@ -10,10 +10,13 @@ jobs:
   test-run:
     runs-on: windows-latest
     steps:
+      - uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
       - uses: actions/setup-node@v3
         with:
           node-version: '18.12.1'
       - uses: actions/checkout@v3
       - run: npm install
-      - run: pwd
-      - run: ls
+      - name: Run TestCafe tests
+        run: npm run test:headless
